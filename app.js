@@ -19,16 +19,16 @@ const guess = (el) => {
 		console.error('Score need small or equal ' + maxScore);
 		return rl.close();
 	}
-	let count = 1;
+	let countGuess = 1;
 	if (x === 0 || y === 0) count = 1;
 	else {
 		for (let i = 1; i <= x; i++) {
 			for (let j = 1; j <= y; j++) {
-				count++;
+				countGuess++;
 			}
 		}
 	}
-	console.info(count);
+	console.info(countGuess);
 }
 
 const inputScore = () => {
